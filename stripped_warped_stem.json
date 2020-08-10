@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stripped_warped_stem"
+          },
+          {
+            "type": "minecraft:empty"
+          }
+        ],
+        "conditions": [
+          {
+          "condition": "minecraft:survive_explosion"
+          }
+        ]
+      }
+    ]
+  }
