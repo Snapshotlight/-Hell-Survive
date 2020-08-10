@@ -12,5 +12,5 @@ execute if score @p death matches 9 run function hell:hell
 function hell:health
 execute as @p if block ~ ~ ~ water run effect give @s slowness 10 2 true
 #rule 4
-execute as @p in the_nether if entity @p run effect give @s hunger 10 1 true
+effect give @s hunger 10 0 true
 #rule 5

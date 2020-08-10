@@ -1,3 +1,5 @@
-execute as @p if predicate minecraft:weather_check run summon lightning_bolt ^-1 ^ ^-1
-schedule function hell:kaminari 100s
-#rule 3
+execute as @a at @s if predicate hell:weather_check run summon lightning_bolt ^-1 ^ ^-1
+
+execute if predicate hell:weather_check run effect give @a minecraft:slowness 1 1
+execute if predicate hell:weather_check run effect give @a minecraft:weakness 1 2
+execute if predicate hell:weather_check run effect give @a minecraft:hunger 1 1
