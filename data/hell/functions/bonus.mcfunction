@@ -1,9 +1,9 @@
-scoreboard objectives add Bonus dummy "Bonus"
+scoreboard objectives add Bonus dummy
 scoreboard players set fake4 Bonus 100
 summon area_effect_cloud ~ ~ ~ {Duration:0,Tags:["Bonus"]}
-execute store result score fake3 Bonus run data get entity @e[tag=Bonus,limit=1] {UUID:[]}
+execute store result score fake3 Bonus run data get entity @e[tag=Bonus,limit=1] UUID[0]
 scoreboard players operation fake3 Bonus %= fake4 Bonus
-schedule function this 60s
+schedule function hell:bonus 60s
 
 execute if score fake3 Bonus matches 0..20 run effect give @a poison 8 0
 execute if score fake3 Bonus matches 0..20 run tellraw @a {"text":"真不幸，你中毒了！下次小心！","color":"dark_green","bold": true}

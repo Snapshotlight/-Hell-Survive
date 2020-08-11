@@ -1,51 +1,51 @@
 {
-    "type": "minecraft:block",
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:iron_ore",
-            "weight": 4
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ore",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 1,
+          "functions":[
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:fortune",
+                        "levels":{
+                          "min":1
+                        }
+                      }
+                    ]    
+                  }
+                }
+              ]
             }
           ]
-          },
-          {
-              "type": "minecraft:empty",
-              "weight": 5
-          },
-          {
-              "type": "minecraft:item",
-              "name": "minecraft:iron_ingot",
-              "weight": 1,
-              "functions":[
-                {
-                    "function": "minecraft:apply_bonus",
-                    "enchantment": "minecraft:fortune",
-                    "formula": "minecraft:ore_drops",
-                    "conditions": [
-                        {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "enchantments": [
-                             {
-                                "enchantments": "minecraft:fortune",
-                                "levels":{
-                                    "min":1
-                                }
-                             }
-                            ]    
-                        }
-                       }
-                   ]
-          }
-        ],
-        "conditions": [
-          {
-            "condition": "minecraft:survives_explosion"
-          }
-        ]
-      }
-    ]
-  }
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

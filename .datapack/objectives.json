@@ -1,1 +1,1 @@
-[["time","dummy","hell:timecheck.mcfunction"],["Bonus","dummy","hell:bouns.mcfunction"],["deathcount","deathCount","hell:pre.mcfunction"]]
+[["Bonus","dummy","hell:bouns.mcfunction"],["time","dummy","hell:prepare.mcfunction"],["deathcount","deathCount","hell:prepare.mcfunction"]]
