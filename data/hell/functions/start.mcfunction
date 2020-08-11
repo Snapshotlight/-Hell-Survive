@@ -13,7 +13,8 @@ function hell:health
 function hell:bonus
 function hell:strongermob
 function hell:kaminari
-execute as @p if block ~ ~ ~ water run effect give @s slowness 10 1 true
+execute as @a at @s if block ~ ~ ~ water run effect give @s slowness 10 1 true
 #rule 4
-effect give @s hunger 10 0 true
+effect give @a[nbt={Dimension:-1}] hunger 1 0
 #rule 5
+schedule function start 0.05s

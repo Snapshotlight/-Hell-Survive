@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ore",
+          "weight": 3
+          }
+        ]
+        },
+        {
+            "type": "minecraft:empty",
+            "weight": 6
+        },
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_ingot",
+            "weight": 1,
+            "functions":[
+              {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "conditions": [
+                      {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                          "enchantments": [
+                           {
+                              "enchantments": "minecraft:fortune",
+                              "levels":{
+                                  "min":1
+                              }
+                           }
+                          ]    
+                      }
+                     }
+                 ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}
