@@ -28,4 +28,4 @@
 
 欢迎通过issue来向我们提交新功能
 
-数据包 by **Snaplight** 和 **弦余Arccos**
+数据包 by **Snaplight** 和 **SfArccos**
