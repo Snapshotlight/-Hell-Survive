@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": [
+      {
+        "item": "minecraft:diamond"
+      }
+    ],
+    "result": "minecraft:coal",
+    "experience": 1000,
+    "cookingtime": 10
+  }

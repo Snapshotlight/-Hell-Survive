@@ -12,3 +12,6 @@ scoreboard players set fake2 time 0
 scoreboard objectives add deathcount deathCount "白给次数"
 scoreboard objectives setdisplay sidebar deathcount
 scoreboard players add @a deathcount 0
+
+gamerule randomTickSpeed 1
+gamerule naturalRegeneration false

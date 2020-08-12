@@ -1,4 +1,3 @@
-execute if entity @e[tag=!pre] run function hell:pre
 execute if score @p death matches 1 run function hell:attribute
 execute if score @p death matches 2 run function hell:attribute
 execute if score @p death matches 3 run function hell:attribute

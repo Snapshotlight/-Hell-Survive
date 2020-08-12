@@ -1,0 +1,25 @@
+{
+    "display":{
+        "icon":{
+            "item":"minecraft:crafting_table"
+        },
+    "title":{
+        "text":"万恶之源"
+    },
+    "description":{
+        "text":"用这个,去做一些奇♂奇♂怪♂怪的东西吧"
+    }
+    },
+    "criteria":{
+        "place_redstone_dust":{
+            "trigger":"minecraft:placed_block",
+            "conditions":{
+                "block":"minecraft:crafting_table"
+            }
+        }
+    },
+    "rewards":{
+        "function":"hell:gacha/start",
+        "experience":10
+    }
+}
