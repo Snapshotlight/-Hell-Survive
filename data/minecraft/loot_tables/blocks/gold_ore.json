@@ -8,8 +8,6 @@
           "type": "minecraft:item",
           "name": "minecraft:gold_ore",
           "weight": 3
-          }
-        ]
         },
         {
             "type": "minecraft:empty",
@@ -25,20 +23,22 @@
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops",
                   "conditions": [
-                      {
+                    {
                       "condition": "minecraft:match_tool",
                       "predicate": {
                           "enchantments": [
-                           {
-                              "enchantments": "minecraft:fortune",
+                            {
+                              "enchantment": "minecraft:fortune",
                               "levels":{
                                   "min":1
                               }
-                           }
+                            }
                           ]    
-                      }
-                     }
+                        }
+                    }
                  ]
+              }
+            ]
         }
       ],
       "conditions": [
