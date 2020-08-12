@@ -4,6 +4,7 @@ function hell:start
 function hell:timecheck
 function hell:randomtp
 function hell:attribute
+function hell:kaminari
 
 scoreboard objectives add time dummy
 scoreboard players set fake2 time 0

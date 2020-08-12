@@ -11,8 +11,8 @@ execute if score @p death matches 9 run function hell:hell
 #rule 8
 function hell:health
 function hell:strongermob
-function hell:kaminari
-execute as @a at @s if block ~ ~ ~ water run effect give @s slowness 10 1 true
+
+execute as @a at @s if block ~ ~ ~ water run effect give @s slowness 1 1 true
 #rule 4
 effect give @a[nbt={Dimension:-1}] hunger 1 0
 #rule 5
