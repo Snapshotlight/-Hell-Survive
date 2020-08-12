@@ -6,15 +6,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:jungle_log"
+          "name": "minecraft:jungle_log",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance_with_looting",
+              "chance": 0.5,
+              "looting_multiplier": 0.1
+            }
+          ]
         },
         {
           "type": "minecraft:empty"
-        }
-      ],
-      "conditions": [
-        {
-        "condition": "minecraft:survives_explosion"
         }
       ]
     }
