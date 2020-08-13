@@ -3,6 +3,4 @@ title @a actionbar [{"text":"已经过："},{"score":{"name":"fake2","objective"
 schedule function hell:timecheck 1s
 
 execute if score fake2 time matches 60 run function hell:bonus
-execute if score fake2 time matches 120 run function hell:randomtp
-
-execute if score fake2 time matches 120 run scoreboard players set fake2 time 0
+execute if score fake2 time matches 3600 run function hell:randomtp

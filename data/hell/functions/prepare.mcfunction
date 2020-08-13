@@ -16,3 +16,4 @@ scoreboard players set @a deathcount 0
 
 gamerule randomTickSpeed 1
 gamerule naturalRegeneration false
+give @p minecraft:written_book{pages:['[{"text":"Here","clickEvent":{"action":"run_command","value":"/function hell:gacha/start"}},{"text":"\\n点击以抽奖"}]'],title:"Trade Book",author:"SfArccos"}
