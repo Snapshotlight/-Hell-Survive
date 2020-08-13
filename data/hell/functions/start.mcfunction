@@ -8,7 +8,7 @@ execute if score @p death matches 7 run function hell:attribute
 execute if score @p death matches 8 run function hell:attribute
 execute if score @p death matches 9 run function hell:hell
 #rule 8
-function hell:health
+function hell:attribute
 function hell:strongermob
 
 execute as @a at @s if block ~ ~ ~ water run effect give @s slowness 1 1 true

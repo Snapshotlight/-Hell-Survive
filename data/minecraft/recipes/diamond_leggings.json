@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XYX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:diamond_block"
+    },
+    "Y": {
+      "item": "minecraft:golden_leggings"
+    }
+  },
+  "result": {
+    "item": "minecraft:diamond_leggings"
+  }
+}

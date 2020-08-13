@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X~X",
+    "#Y~",
+    "X#X"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:coals"
+    },
+    "X": {
+      "item": "minecraft:blaze_powder"
+    },
+    "~": {
+      "item": "minecraft:gunpowder"
+    },
+    "Y": {
+      "item": "minecraft:bone_meal"
+    }
+  },
+  "result": {
+    "item": "minecraft:tnt",
+    "count": 9
+  }
+}
